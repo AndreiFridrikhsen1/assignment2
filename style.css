@@ -1,0 +1,177 @@
+body{
+    background-color:#BC503C;
+    background-image: url("images/7CfzWqwoHSzqtyQrfvnTwN.jpg");
+    margin:0;
+    background-size:contain;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px;
+    height: 18vh;
+    width: 100%;
+    border-top: solid thin;
+    border-bottom: solid thin;
+    background: rgb(112,18,5);
+    background: linear-gradient(138deg, rgba(112,18,5,1) 42%, rgba(116,21,8,1) 51%, rgba(188,80,60,1) 82%, rgba(209,169,76,1) 100%);
+    flex-direction: column;
+}
+footer {height: auto;}
+footer a{margin-top:5px;}
+a:last-child{margin-bottom: 28px;}
+
+
+
+.agbalumo-regular {
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+/*style all h2*/
+section h2 {
+     
+    font-family: "Agbalumo", system-ui;
+    text-align: center;
+    margin-top: 15px;  
+    margin-bottom: 30px;
+    color:#285003;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 2px 2px 2px ;
+
+}
+
+.main section {
+    border: solid 2px wheat;
+    width: 42vw;/*42% of the vieport width*/
+    justify-content: center;
+    background-color: #F8AF30;
+    box-shadow: 3px 2px 2px;
+    margin-top: 30px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    
+    
+}
+/*adjust size for mobile screens*/
+@media only screen and (max-width:768px) {
+    .main section{width: 80vw;}
+    footer {}
+    
+}
+.main section:first-child{margin-top: 40px;}
+span {color: #F8AF30;}
+section div {
+    margin-top:15px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;/*center the div inside the section*/
+    min-height: 35vh;
+    background-color: rgba(241, 205, 161, 0.878);
+    border: solid thin;
+    width:95%;
+    box-sizing: border-box;
+    padding: 18px;
+    
+    
+
+
+}
+.main section:last-child{
+    margin-bottom: 40px;
+}
+
+h1, footer h3 {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-shadow: 2px 2px 2px black;
+    color:rgb(247, 249, 249);
+}
+footer h3:first-child{margin-top: 28px;}
+/*styling lyrics */
+section p {
+    font-family: "Caveat", cursive;
+    
+    font-weight: 300;
+    font-style: normal;
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: rgb(96, 37, 37);
+
+}
+
+footer a {
+    color:beige;
+    text-align: center;
+}
+
+section p:hover, .main section:nth-child(2) .calm:hover {
+    color: #4c9a04;
+    font-family: "Caveat", cursive;
+    text-shadow: none;
+    font-size: 26px;
+}
+
+section:first-child p, .calm{
+    transition: all ease-in-out 1s;
+
+}
+
+/*pre chorus*/
+
+
+.main section:nth-child(2) p:hover, .main section:nth-child(4) p:not(.calm):hover {
+    color:rgb(255, 0, 0);
+    text-shadow: 2px 1px 1px rgb(38, 37, 0.3);
+    letter-spacing: 2px;
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    
+}
+/*chorus*/
+.main section:nth-child(3) p , .main section:nth-child(5) p {
+    font-family: 'Londrina Solid', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(96, 37, 37);
+
+}
+.main section:nth-child(3) p:hover, .main section:nth-child(5) p:not(.calm):hover {
+    color:rgb(6, 95, 22);
+    font-size: 1.6em;
+
+}
+
+/*add favicons to all the p tags when hovering*/
+
+.main section:nth-child(odd) p:hover::after, .calm:hover::after {
+    content: url("images/favicon.png");
+    margin-left: 10px;
+}
+.main section:nth-child(even) p:not(.calm):hover::after{
+    content:url("images/fire.png");
+    margin-inline-start: 10px;
+}
+.main section:last-child p {
+    font-family: 'Bangers', system-ui;
+    color: rgb(68, 30, 30);
+    font-size: 20px;
+    text-shadow: 2px 1px 4px rgb(169, 167, 167);
+    letter-spacing: 3px;
+}
+.main section:last-child p:hover {
+    color:rgb(233, 89, 5);
+    text-shadow: none;
+    letter-spacing: normal;
+}
+
